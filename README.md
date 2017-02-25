@@ -11,4 +11,4 @@ There are several warning messages on this website that warn against overloading
 
 ![GitHub Logo](https://github.com/images/logo.png)
 
-
+![Bilby Stampede](http://example.com/images/logo.png) 
