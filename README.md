@@ -9,6 +9,6 @@ We are working on importing data from http://www.ndbc.noaa.gov/
 
 There are several warning messages on this website that warn against overloading their bandwidth.
 
-![GitHub Logo](/images/logo.png)
-https://github.com/images/logo.png
+![GitHub Logo](https://github.com/images/logo.png)
+
 
