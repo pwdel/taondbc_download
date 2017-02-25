@@ -1,0 +1,286 @@
+GitHub Help
+
+  • Version
+    GitHub.com GitHub Enterprise 2.8 GitHub Enterprise 2.7 GitHub Enterprise
+    2.6 GitHub Enterprise 2.5
+  • Contact Support
+  • Return to GitHub
+
+Importing your projects to GitHub / Adding an existing project to GitHub using
+the command line
+
+[                    ]
+
+Adding an existing project to GitHub using the command line
+
+  • mac
+  • windows
+  • linux
+  • all
+
+Putting your existing work on GitHub can let you share and collaborate in lots
+of great ways.
+
+Tip: If you're most comfortable with a point-and-click user interface, try
+adding your project with GitHub Desktop. For more information, see "Adding a
+repository from your local computer to GitHub Desktop" in the GitHub Desktop
+Help.
+
+Warning: Never git add, commit, or push sensitive information to a remote
+repository. Sensitive information can include, but is not limited to:
+
+  • Passwords
+  • SSH keys
+  • AWS access keys
+  • API keys
+  • Credit card numbers
+  • PIN numbers
+
+For more information, see "Removing sensitive data from a repository."
+
+ 1. Create a new repository on GitHub. To avoid errors, do not initialize the
+    new repository with README, license, or gitignore files. You can add these
+    files after your project has been pushed to GitHub.
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+    Create New Repository drop-down                                                     
+ 2. Open TerminalTerminalGit Bash.
+
+ 3. Change the current working directory to your local project.
+
+ 4. Initialize the local directory as a Git repository.
+
+    git init
+
+ 5. Add the files in your new local repository. This stages them for the first
+    commit.
+
+    git add .
+    # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+ 6. Commit the files that you've staged in your local repository.
+
+    git commit -m "First commit"
+    # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+ 7. At the top of your GitHub repository's Quick Setup page, click to copy the
+    remote repository URL.
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+    Copy remote repository URL field                                                                                
+
+ 8. In Terminal, add the URL for the remote repository where your local
+    repository will be pushed.
+
+    git remote add origin remote repository URL
+    # Sets the new remote
+    git remote -v
+    # Verifies the new remote URL
+
+ 9. Push the changes in your local repository to GitHub.
+
+    git push -u origin master
+    # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+ 1. Create a new repository on GitHub. To avoid errors, do not initialize the
+    new repository with README, license, or gitignore files. You can add these
+    files after your project has been pushed to GitHub.
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+    Create New Repository drop-down                                                     
+ 2. Open TerminalTerminalGit Bash.
+
+ 3. Change the current working directory to your local project.
+
+ 4. Initialize the local directory as a Git repository.
+
+    git init
+
+ 5. Add the files in your new local repository. This stages them for the first
+    commit.
+
+    git add .
+    # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+ 6. Commit the files that you've staged in your local repository.
+
+    git commit -m "First commit"
+    # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+ 7. At the top of your GitHub repository's Quick Setup page, click to copy the
+    remote repository URL.
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+    Copy remote repository URL field                                                                                
+
+ 8. In the Command prompt, add the URL for the remote repository where your
+    local repository will be pushed.
+
+    git remote add origin remote repository URL
+    # Sets the new remote
+    git remote -v
+    # Verifies the new remote URL
+
+ 9. Push the changes in your local repository to GitHub.
+
+    git push origin master
+    # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+ 1. Create a new repository on GitHub. To avoid errors, do not initialize the
+    new repository with README, license, or gitignore files. You can add these
+    files after your project has been pushed to GitHub.
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+    Create New Repository drop-down                                                     
+ 2. Open TerminalTerminalGit Bash.
+
+ 3. Change the current working directory to your local project.
+
+ 4. Initialize the local directory as a Git repository.
+
+    git init
+
+ 5. Add the files in your new local repository. This stages them for the first
+    commit.
+
+    git add .
+    # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+ 6. Commit the files that you've staged in your local repository.
+
+    git commit -m "First commit"
+    # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+ 7. At the top of your GitHub repository's Quick Setup page, click to copy the
+    remote repository URL.
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+    Copy remote repository URL field                                                                                
+
+ 8. In Terminal, add the URL for the remote repository where your local
+    repository will be pushed.
+
+    git remote add origin remote repository URL
+    # Sets the new remote
+    git remote -v
+    # Verifies the new remote URL
+
+ 9. Push the changes in your local repository to GitHub.
+
+    git push origin master
+    # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+ Further reading
+
+  • "Adding a file to a repository using the command line"
+
+  • Contact a human
+
+Article versions
+
+  • GitHub.com
+  • GitHub Enterprise 2.8
+  • GitHub Enterprise 2.7
+  • GitHub Enterprise 2.6
+  • GitHub Enterprise 2.5
+
+    
+The 
+
+(C) 2017 GitHub Inc. All rights reserved.
+
+  • Terms of Service
+  • Privacy
+  • Security
+  • Support
+
