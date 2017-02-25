@@ -7,10 +7,12 @@ If this app is not careful, it could create a Denial of Service Attack (DOS).
 
 We are working on importing data from http://www.ndbc.noaa.gov/ 
 
-There are several warning messages on this website that warn against overloading their bandwidth.
-
-![GitHub Logo](https://github.com/images/logo.png)
-
-![Bilby Stampede](http://example.com/images/logo.png) 
+There are several warning messages on this website that warn against overloading their bandwidth. 
 
 ![Image](./readmepics/furtherquestions.png?raw=true)
+![Image](./readmepics/futureplansdiscontinueftpavoidit.png?raw=true)
+![Image](./readmepics/generalguidancefromndbc_web_data_guidpdf.png?raw=true)
+![Image](./readmepics/generalguidelinebandwidthrequest.png?raw=true)
+![Image](./readmepics/httppreferredprotocol.png?raw=true)
+![Image](./readmepics/ndbc_web_data_guide.png?raw=true)
+
