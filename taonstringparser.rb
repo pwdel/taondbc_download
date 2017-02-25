@@ -28,16 +28,23 @@ puts @buoys
 =end
 
 # Get Content Table from CSS
-content_table = page.css("[id=contenttable]")
+  # content_table = page.css("[id=contenttable]")
   # puts content_table
 
 #XPath Selector //*[@id="contenttable"]/tbody/tr/td[3]/pre[1]/a[1]
 
-item = content_table.xpath('//*/tbody/tr/td[3]/pre[1]/a[1]').text
-  puts item
+=begin
+item = content_table.xpath('//*/tbody/tr/td[3]/pre[1]/a[1]') do |it|
+  puts it.text
+=end
 
-thing = content_table.xpath('//*[@id="contenttable"]/tbody/tr/td[3]/pre[1]/a[1]').content
-  puts thing
+# //*[@id="contenttable"]
+
+# puts thing = page.xpath('//*[@id="contenttable"]')
+
+pre_blocks = page.search('pre')
+puts pre_blocks.map(&:to_html)
+pre_blocks.css('')
 
 
 
