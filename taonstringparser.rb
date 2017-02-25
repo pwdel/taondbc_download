@@ -5,6 +5,7 @@ require 'rubygems'
 require 'nokogiri'
 require 'rest-client'
 require 'csv'
+require 'pp'
 
 # Pull The Page Down
 
@@ -13,9 +14,10 @@ page = Nokogiri::HTML(RestClient.get("http://www.ndbc.noaa.gov/to_station.shtml"
 end
 
 # Put Bouy Numbers Into Data Structure
+=begin
 @bouys = Array.new
 page.css('.result').each do |buoy|
-  buoy_number = buoy.css("a[class=business-name]").each do |by|
+  buoy_number = buoy.css("a[class=noprint]").each do |by|
 end
 end
 
@@ -23,3 +25,34 @@ end
 
 # display hash result
 puts @buoys
+=end
+
+# Get Content Table from CSS
+content_table = page.css("[id=contenttable]")
+  # puts content_table
+
+#XPath Selector //*[@id="contenttable"]/tbody/tr/td[3]/pre[1]/a[1]
+
+item = content_table.xpath('//*/tbody/tr/td[3]/pre[1]/a[1]').text
+  puts item
+
+thing = content_table.xpath('//*[@id="contenttable"]/tbody/tr/td[3]/pre[1]/a[1]').content
+  puts thing
+
+
+
+=begin
+  # get table rows
+  rows = []
+  content_table.xpath('//*/tbody/tr/td[3]/pre[1]/a[1]').each_with_index do |row, i|
+    rows[i] = {}
+    row.xpath('td').each_with_index do |td, j|
+      rows[i][headers[j]] = td.text
+    end
+  end
+
+  p rows
+=end
+
+
+# business_web = page.css("div.links a").map { |link| link['href'] }
