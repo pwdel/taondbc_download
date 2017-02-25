@@ -14,5 +14,5 @@ There are several warning messages on this website that warn against overloading
 ![Image](./readmepics/generalguidancefromndbc_web_data_guidepdf.png?raw=true)
 ![Image](./readmepics/generalguidelinebandwidthrequest.png?raw=true)
 ![Image](./readmepics/httppreferredprotocol.png?raw=true)
-![Image](./readmepics/ndbc_web_data_guide.png?raw=true)
+![Image](./readmepics/ndbc_web_data_guide.pdf?raw=true)
 
