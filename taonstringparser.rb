@@ -42,9 +42,15 @@ item = content_table.xpath('//*/tbody/tr/td[3]/pre[1]/a[1]') do |it|
 
 # puts thing = page.xpath('//*[@id="contenttable"]')
 
-pre_blocks = page.search('pre')
-puts pre_blocks.map(&:to_html)
-pre_blocks.css('')
+pre_blocks = page.search('pre a').each do |block|
+  puts block.text
+end
+# puts pre_blocks.map(&:to_html)
+# pre_blocks.css('')
+
+pre_blocks = page.search('pre a').map { |link| link['href'] }.each do |block|
+  puts block
+end
 
 
 
